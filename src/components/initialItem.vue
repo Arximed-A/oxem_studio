@@ -7,7 +7,8 @@
         type="text"
         class="calc__hole"
         v-model="firstMoney"
-        disabled
+        :disabled="dataStatus"
+        readonly
       />
       <div class="calc__box calc__box_procent">{{ initial }}%</div>
     </div>
